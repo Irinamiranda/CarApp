@@ -40,12 +40,15 @@ public class Vehicle {
         this.speed = speed;
     }
 
-    public int accelerate(){
+    public void accelerate(){
 
-        return speed += 5;
+        speed += 5;
+        System.out.println(getName() + " is accelerating " + getSpeed());
+
     }
-    public int brake() {
-        return speed -=5;
+    public void brake() {
+         speed -=5;
+        System.out.println(getName() + " is slowing down " + getSpeed());
     }
 
 }
